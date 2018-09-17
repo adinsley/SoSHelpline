@@ -1,0 +1,393 @@
+﻿/* 
+-------------------------------------------------------------------
+soshelp stylesheet: global styles
+author: www.semiartist.com
+date created: 20 august 2009
+last date modified: 12 september 2009
+-------------------------------------------------------------------
+*/
+
+
+
+
+body { color: #404040; font-family: "Gill Sans", "Gill Sans MT", helvetica, arial, sans-serif; font-size: 10pt; background-color: #eaf8fe; }
+p {line-height: 150%;}
+td { }
+a:link  { color: #07b3ee; text-decoration: none; }
+a:visited { color: #07b3ee; text-decoration: none; }
+a:hover { color: #07b3ee; text-decoration: underline; }
+a:active { color: #07b3ee; text-decoration: underline; }
+
+/*arrow bullets for lists*/
+#info
+{
+	margin-left: 15px;
+	padding-left: 0;
+	list-style: none;
+}
+
+#info li
+{
+	padding-left: 15px;
+	background-image: url(images/arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 0 .4em;
+}
+
+
+p.dotted {
+	border-style:hidden;
+	border-width:1px;
+	border-bottom-style:dotted;}
+
+p.copyright {
+	font-size: 9pt;
+	}	
+	
+/* Font for page title */
+ .title {
+ 	color: #007070;  
+	font-size: 22pt;
+ }
+ 
+ 
+/* Font for menu title */
+ .menutitle {
+	color: #ffffff;  
+	font-size: 15pt;
+ }
+ 
+/* Font for menu items */
+a.menuitems:link { color: #ffffff; text-decoration: none; }
+a.menuitems:hover { color: #ffffff; text-decoration: underline; }
+a.menuitems:visited { color: #ffffff; text-decoration: none; }
+a.menuitems:active { color: #ffffff; text-decoration: underline; }
+
+/* Padding for main content cell */
+ td.content {
+ 	width: 774px;
+	vertical-align: top;
+	padding-left:50px;
+	padding-right:50px;
+	padding-bottom: 10px;
+ }
+ 
+/* Page Borders */ 
+td.empty {
+	height: 12px;
+	background-color: #eaf8fe;
+}
+td.topborder0 {
+ 	width:12px;
+ 	height:14px;
+	background-image: url(images/border_top_left.jpg);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+td.topborder1 {
+	width:928px;
+ 	height:12px;
+	background-image: url(images/border_top_middle.jpg);
+}
+td.topborder2 {
+	width:15px;
+ 	height:12px;
+	background-image: url(images/border_top_right.jpg);
+ 	background-position: top right;
+ 	background-repeat: no-repeat;
+}
+td.bottomborder0 {
+ 	width:14px;
+ 	height:12px;
+	background-image: url(images/border_bottom_left.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+td.bottomborder1 {
+	width:928px;
+ 	height:12px;
+	background-image: url(images/border_bottom_middle.jpg);
+	background-position: bottom;
+}
+td.bottomborder2 {
+	width:15px;
+ 	height:12px;
+	background-image: url(images/border_bottom_right.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+td.middleborder1 {
+ 	width:1px;
+	background-image: url(images/spacer_grey.jpg);
+	background-position: left;
+	background-repeat: repeat;
+}
+td.middleborder2 {
+ 	width:1px;
+	background-image: url(images/spacer_grey.jpg);
+	background-position: right;
+	background-repeat: repeat;
+}
+
+/* Header */ 
+td.header0 {
+ 	height:91px;
+	background-image: url(images/spacer_greylong2.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+td.header1 {
+ 	width:300px;
+ 	height:91px;
+	background-image: url(images/logo.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+td.header2 {
+ 	width:165px;
+ 	height:91px;
+	background-image: url(images/header1.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+td.header3 {
+ 	width:272px;
+ 	height:91px;
+	background-image: url(images/header2.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+td.header4 {
+ 	width:161px;
+ 	height:91px;
+	background-image: url(images/header3.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-bottom: 6px;
+}
+
+/* Footers */ 
+td.footer1 {
+ 	width:20px;
+ 	height:28px;
+	background-image: url(images/footer1.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+td.footer2 {
+ 	width:20px;
+ 	height:28px;
+	background-image: url(images/footer_right.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+/* List seperators*/
+#navcontainer {
+	text-align: center;}
+
+#navlist
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#navlist li
+{
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+
+#navlist li:before { 
+	content: "| ";
+	color: #FFF
+}
+
+#navlist li:first-child:before { 
+	content: ""; 
+}
+
+/*IE workaround*/
+/*All IE browsers*/
+* html #navlist li
+{
+	border-left: 1px solid white;
+	padding: 0 0.4em 0 0.4em;
+	margin: 0 0.4em 0 -0.4em;
+}
+
+/*Win IE browsers - hide from Mac IE\*/
+* html #navlist { height: 1%; }
+
+* html #navlist li
+{
+	display: block;
+	float: left;
+}
+
+/*End hide*/
+/*Mac IE 5*/
+* html #navlist li:first-child { border-left: 0; }
+
+
+
+
+
+* html #footer:after{
+	content: "© copyright 2009. SOS Help in France. all rights reserved.";
+}
+    
+#footer:after{
+	content: "© copyright 2009. SOS Help in France. all rights reserved.";
+}
+
+/* Swirl on Content Pages */
+#swirl1 {
+ 	width:14px;
+ 	height:70px;
+ 	position: absolute; top: 109px;
+	background-image: url(images/swirl1.jpg);
+	background-repeat: no-repeat;
+}
+td.swirl2 {
+ 	width:184px;
+ 	height:59px;
+	background-image: url(images/swirl1b.jpg);
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+/* td.swirl3 {
+ 	width:764px;
+ 	height:114px;
+	background-image: url(images/swirl1c.jpg);
+	background-repeat: no-repeat;
+	background-position: top left;
+} */
+td.swirl4 {
+ 	width:15px;
+	background-image: url(images/swirl1e.jpg);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+/* Menu on Content Pages */
+td.menu {
+	padding-left: 4px
+}
+tr.menutop {
+ 	height:32px;
+	background-color: #029f8f;
+}
+tr.menutabs {
+ 	height:20px;
+	background-image: url(images/menubkgd.gif);
+}
+#menubkgdfix {
+	background-image: url(images/menu_bottom2.jpg);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+/* Home page */
+h1{
+	display: inline;
+  	font-size: 12pt;
+  	font-weight: normal;
+  	color: #006f70;
+}
+h2{
+	display: inline;
+  	font-size: 12pt;
+  	font-weight: normal;
+	color: #07b3ee;
+}
+h3{
+	display: inline;
+  	font-size: 15pt;
+  	font-weight: normal;
+	color: #07b3ee;
+}
+h4{
+  	font-size: 10pt;
+  	font-weight: normal;
+	color: #404040;
+}
+h5{
+	display: inline;
+  	font-size: 12pt;
+  	font-weight: normal;
+	color: #07b3ee;
+}
+td.slogan {
+	padding: 3px;
+	text-align: center;
+	background-color: #dff0ec;
+}
+td.decide1 {
+	background-image: url(images/image_home3.jpg);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+td.decide2 {
+	padding: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 21px;
+}
+td.decide3 {
+	padding-left: 14px;
+	background-image: url(images/image_home4.jpg);
+	background-repeat: no-repeat;
+	background-position: top left;
+	text-align: left;
+}
+a.h3:link { color: #ffffff; text-decoration: none; font-size: 24pt;}
+a.h3:visited { color: #ffffff; text-decoration: none; font-size: 24pt;}
+a.h3:hover { color: #ffffff; text-decoration: none; font-size: 27pt;}
+a.h3:active { color: #ffffff; text-decoration: none; font-size: 24pt;}
+
+/* Stay Informed iFrame */
+a.rollover {
+	display: block;
+	width: 90px;
+	height: 23px;
+	text-decoration: none;
+	background: url("images/button_signup.jpg");
+}
+a.rollover:hover {
+	background-position: -90px 0;
+}
+
+.displace {
+	position: absolute;
+	left: -5000px;
+}
+td.thanks {
+	padding-left: 5px;
+	padding-right: 14px;
+	text-align: right;
+}
+
+/* Gradient 1 for newsletter box*/
+.tb10 {
+	background-image:url(images/form_bg.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #dddddd;
+	width: 152px;
+	color:#333333;
+	padding:3px;
+	margin-top: 5px;
+	margin-bottom:8px;
+	font-family:gill sans, gill sans MT, tahoma, arial, sans-serif;
+}
+
+#flyerImage {
+    max-width: 600px;
+    max-height: 400px;
+    padding-bottom: 2%;
+
+}
+
+
+
